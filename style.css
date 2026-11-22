@@ -5,13 +5,13 @@ body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#1f1a
 #jogo{width:min(100vw,960px)}
 button{font:inherit;cursor:pointer;color:inherit}
 button:focus-visible{outline:3px solid var(--ouro);outline-offset:2px}
-#hud{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 14px;background:var(--mad);border-bottom:4px solid var(--esc);color:var(--papel);font-size:clamp(13px,2.4vw,18px)}
+#hud{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 14px;background:repeating-linear-gradient(0deg,#8a5a2b 0 7px,#7a4e24 7px 8px);box-shadow:inset 0 3px 0 #b07a40;border-bottom:4px solid var(--esc);color:var(--papel);text-shadow:1px 1px 0 var(--esc);font-size:clamp(13px,2.4vw,18px)}
 #pecas span{margin-left:8px;filter:grayscale(1);opacity:.35}
 #pecas span.tem{filter:none;opacity:1}
 #som{padding:2px 12px;background:var(--papel);border:2px solid var(--esc);border-radius:6px}
 .palco{position:relative;aspect-ratio:320/192;overflow:hidden;background:#000}
 #mapa{display:block;width:100%;height:100%;image-rendering:pixelated}
-#dlg{position:absolute;left:2%;right:2%;bottom:3%;display:flex;gap:12px;padding:12px;background:var(--papel);border:4px solid var(--mad);outline:3px solid var(--esc);border-radius:10px;font-size:clamp(12px,2.5vw,20px);cursor:pointer}
+#dlg{position:absolute;left:2%;right:2%;bottom:3%;display:flex;gap:12px;padding:12px;background:var(--papel);border:4px solid var(--mad);outline:3px solid var(--esc);border-radius:10px;box-shadow:inset 0 0 0 3px #e8c98f,0 6px 0 #0006;font-size:clamp(12px,2.5vw,20px);cursor:pointer}
 #retrato{flex:none;width:clamp(48px,11vw,96px);aspect-ratio:1;align-self:flex-start;image-rendering:pixelated;background:#9dd8f2;border:3px solid var(--mad);border-radius:6px}
 #quem{color:#a4561f}
 #texto{margin:2px 0 0;white-space:pre-line;line-height:1.25}
@@ -19,7 +19,7 @@ button:focus-visible{outline:3px solid var(--ouro);outline-offset:2px}
 #escolhas button{padding:6px 10px;text-align:left;background:#fff6d8;border:3px solid var(--mad);border-radius:8px}
 #escolhas button:hover,#escolhas button:focus-visible{background:var(--ouro)}
 .tela{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px;text-align:center;overflow:auto;font-size:clamp(13px,2.6vw,20px)}
-#titulo{background:linear-gradient(#9dd8f2,#c9f08e 65%,#6fbf4a)}
+#titulo{background:linear-gradient(#9dd8f2cc,#c9f08e66 55%,#4f9a35dd);backdrop-filter:blur(1.5px)}
 h1{margin:0;font-size:clamp(48px,12vw,104px);line-height:.9;color:#fff;text-shadow:4px 4px 0 var(--esc)}
 h2{margin:0;font-size:clamp(20px,4.4vw,34px)}
 .tela p{margin:0;max-width:34em}
