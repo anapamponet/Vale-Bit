@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vale Bit · O sonho do novo Steve Jobs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="jogo">
+  <header id="hud">
+    <span>Primavera, dia 1</span>
+    <span id="pecas" aria-label="Peças coletadas"></span>
+    <button id="som" aria-label="Ligar ou desligar o som">♪</button>
+  </header>
+  <div class="palco">
+    <canvas id="mapa" width="320" height="192"></canvas>
+    <div id="dlg" hidden>
+      <canvas id="retrato" width="16" height="16"></canvas>
+      <div><b id="quem"></b><p id="texto"></p><div id="escolhas"></div></div>
+    </div>
+    <div id="montagem" class="tela" hidden></div>
+    <div id="titulo" class="tela">
+      <h1>Vale Bit</h1>
+      <p>Uma fazenda, quatro vizinhos e um sonho: ser o novo Steve Jobs.</p>
+      <input id="nome" maxlength="14" placeholder="Seu nome" aria-label="Seu nome">
+      <button id="jogar" class="grande">Começar</button>
+      <small>Setas ou WASD para andar · E para conversar · 1 a 4 para responder</small>
+    </div>
+  </div>
+  <div id="pad">
+    <button data-d="u">▲</button><button data-d="l">◀</button><button data-d="r">▶</button><button data-d="d">▼</button><button id="agir">E</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
